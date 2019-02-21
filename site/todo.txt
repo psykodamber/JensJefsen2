@@ -1,0 +1,6 @@
+musik som starter når vi går ind på siden og pauser når man starter en video
+
+
+Videoerne ikke have controls, men kunne pauses og startes med clicks
+
+auto play video når man scroller over.

@@ -1,0 +1,146 @@
+
+* { 
+ margin:0;
+ padding: 0;
+ box-sizing: border-box;
+
+}
+html{
+       overflow-x: hidden;
+       scroll-behavior: smooth;
+        background-color: black;
+        font-family: "Times New Roman", Times, serif;  
+}
+audio{
+/*    display: none;*/
+}
+section{
+    background-color: black;
+    }
+p{
+    color: white;
+    font-style: italic;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 100px 0;
+}
+.bg2 p{
+    padding-top: 150px;
+ 
+}
+
+
+
+.start{
+    background-repeat: no-repeat;
+    background-size: cover;  
+    
+    height: 800px;
+}
+
+ .par{
+  min-height: 500px; 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;}
+
+.bg {
+    min-height: 800px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.bg1{  
+    background-image: url("/images/bg1.jpg");
+}
+.bg2{
+    background-image: url("/images/bg2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.title{
+    width: 65%;
+    color: white;
+    background-color:rgba(0, 0, 0, 0.8);
+    font-size: 5em;
+    border: solid;
+    border-color: rgba(255, 255, 255, 0.5);
+    border-width: 12px 0;
+    text-align: center;
+    font-style: italic;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+}
+ .video{
+        margin: 0 auto;
+        text-align: center;  
+
+    }
+.downarrow{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+       cursor: pointer;
+}
+
+.pic{
+    text-align: center;
+}
+
+#myVideo{
+  position: static;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  max-height:  height: 100%;
+  clip-path: inset(0 0 26% 0);
+
+}
+.video video{
+    width: 70%;
+    margin-bottom: 5px;
+}
+
+
+/*Media queries */
+
+@media only screen and (max-width: 600px) {
+    .start{
+     background-image: url(/images/bigPicMobile.jpg);
+   
+    }
+    .title{
+        width: 80%;
+    }
+    #myVideo{
+        display: none;
+    }
+
+  
+}
+
+@media only screen and (min-width: 601px) {
+    
+    p {
+        font-size: 2.5em;
+    }
+    .bg2 p {
+           
+    position: relative;
+    top: 80%;
+    left: 30%;
+    transform: translate(-50%, 30%);  
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+    .title{
+        max-width: 35%;
+    }
+}
